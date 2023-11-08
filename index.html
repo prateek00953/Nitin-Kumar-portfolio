@@ -90,7 +90,7 @@ section .title::after{
 }
 /* navbar styling */
 .navbar{
-    position: fixed;
+    
     width: 100%;
     z-index: 999;
     padding: 30px 0;
@@ -107,16 +107,18 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fff;
+    color: #888;
     font-size: 35px;
     font-weight: 600;
+    
 }
 .navbar .logo a span{
     color: crimson;
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
+.navbar .sticky .logo a span{
     color: #fff;
+    
 }
 .navbar .menu li{
     list-style: none;
@@ -124,7 +126,7 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
+    color: #666;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -134,11 +136,11 @@ section .title::after{
     color: crimson;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: #111;
 }
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
+    color: #888;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -152,7 +154,7 @@ section .title::after{
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #fff;
+    color: #000;
     z-index: 9999;
     font-size: 30px;
     border-radius: 6px;
@@ -175,7 +177,7 @@ section .title::after{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
-    color: #fff;
+    color: #000;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -207,7 +209,7 @@ section .title::after{
 .home .home-content a{
     display: inline-block;
     background: crimson;
-    color: #fff;
+    color: #000;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
@@ -250,7 +252,7 @@ section .title::after{
 .about .about-content .right a{
     display: inline-block;
     background: crimson;
-    color: #fff;
+    color: black;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
@@ -701,7 +703,7 @@ footer span a:hover{
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Nitin Kumar</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <div class="text-3">And I'm an <span class="typing"><abbr title="Engineer"><em>Ingenieur</em></abbr></span></div>
                 <a href="#">Hire me</a>
             </div>
         </div>
@@ -712,7 +714,7 @@ footer span a:hover{
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="" alt="">
+                    <img src="myImage.jpg" alt="my image">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Nitin Kumar and I'm a <span class="typing-2">student in SRM UNIVERSITY,Kattabkulanthur</span></div>
@@ -725,7 +727,7 @@ footer span a:hover{
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">My services</h2>
+            <h2 class="title">My interests</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
@@ -803,48 +805,6 @@ footer span a:hover{
         </div>
     </section>
     <!-- teams section start -->
-    <section class="teams" id="teams">
-        <div class="max-width">
-            <h2 class="title">My teams</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-1.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-2.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-3.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-4.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
